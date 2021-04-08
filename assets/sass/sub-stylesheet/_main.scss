@@ -311,7 +311,7 @@
                 height: 420px;
             }
             @include breakpoint (mobile) {
-                height: 450px;
+                height: 480px;
             }
         }
         .godaddy-content {
@@ -436,11 +436,17 @@ footer {
         .footer-item {
             @extend %flex;
             align-items: baseline;
-            justify-content: space-between;
+            justify-content: flex-start;
+            @include breakpoint (lg) {
+                justify-content: space-between;
+            }
             ul.item-list {
-                padding: 0;
+                padding: 12px;
                 margin: 0;
                 list-style: none;
+                @include breakpoint (lg) {
+                    padding: 0;
+                }
                 li {
                     margin: 12.5px 0;
                     span.title {
@@ -475,6 +481,9 @@ footer {
                             path {
                                 fill: $white-color;
                             }
+                        }
+                        img {
+                            height: 50px;
                         }
                     }
                 }

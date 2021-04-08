@@ -46,7 +46,7 @@ input,
 select,
 textarea {
   color: #716c80;
-  font-family: "Signika", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   outline: none;
@@ -85,7 +85,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   color: #1f202a;
   font-weight: 700;
-  font-family: "Signika", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   text-transform: capitalize; }
 
@@ -93,7 +93,7 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
   color: inherit;
   font-size: inherit;
   font-weight: 700;
-  font-family: "Signika", sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 @media screen and (min-width: 576px) {
   h1 {
@@ -118,10 +118,10 @@ p {
   margin: 0 0 15px;
   color: #1f202a;
   line-height: 1.5;
-  font-family: "Signika", sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 span {
-  font-family: "Signika", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px; }
 
 a {
@@ -129,7 +129,7 @@ a {
   text-decoration: none;
   display: inline-block;
   outline: none;
-  font-family: "Signika", sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease; }
@@ -627,6 +627,8 @@ header .header-bg {
       header .header-bg .header-item .header-left .header-logo a i {
         font-size: 30px;
         color: #000; }
+      header .header-bg .header-item .header-left .header-logo a img {
+        height: 50px; }
       @media (max-width: 991px) {
         header .header-bg .header-item .header-left .left-menu {
           --color-module-fg: #111;
@@ -661,7 +663,6 @@ header .header-bg {
         @media (min-width: 992px) {
           header .header-bg .header-item .header-left .left-menu ul.left-list {
             display: flex;
-            flex-wrap: wrap;
             margin-top: 0; } }
         header .header-bg .header-item .header-left .left-menu ul.left-list li {
           margin: 0 5px; }
@@ -1232,7 +1233,7 @@ header .header-bg {
           height: 420px; } }
       @media (max-width: 425px) {
         .why-godaddy .section-wrapper .applay-bg {
-          height: 450px; } }
+          height: 480px; } }
     .why-godaddy .section-wrapper .godaddy-content {
       padding: 25px 0;
       text-align: center; }
@@ -1321,11 +1322,17 @@ footer {
     padding: 60px 0; }
     footer .footer-middle .footer-item {
       align-items: baseline;
-      justify-content: space-between; }
+      justify-content: flex-start; }
+      @media (min-width: 992px) {
+        footer .footer-middle .footer-item {
+          justify-content: space-between; } }
       footer .footer-middle .footer-item ul.item-list {
-        padding: 0;
+        padding: 12px;
         margin: 0;
         list-style: none; }
+        @media (min-width: 992px) {
+          footer .footer-middle .footer-item ul.item-list {
+            padding: 0; } }
         footer .footer-middle .footer-item ul.item-list li {
           margin: 12.5px 0; }
           footer .footer-middle .footer-item ul.item-list li span.title {
@@ -1347,6 +1354,8 @@ footer {
       justify-content: space-between; }
       footer .footer-bottom .bottom-inner .bottom-left .footer-logo a svg path {
         fill: #fff; }
+      footer .footer-bottom .bottom-inner .bottom-left .footer-logo a img {
+        height: 50px; }
       footer .footer-bottom .bottom-inner .bottom-media ul.media-list {
         margin: 0;
         padding: 0;

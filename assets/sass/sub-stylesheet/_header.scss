@@ -17,6 +17,9 @@ header {
                             font-size: 30px;
                             color: #000;
                         }
+                        img {
+                            height: 50px;
+                        }
                     }
                 }
                 .left-menu {
@@ -54,7 +57,6 @@ header {
                         margin-top: 5rem;
                         @include breakpoint (lg) {
                             display: flex;
-                            flex-wrap: wrap;
                             margin-top: 0;
                         }
                         li {
