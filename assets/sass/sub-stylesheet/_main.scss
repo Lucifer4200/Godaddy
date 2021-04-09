@@ -511,3 +511,364 @@ footer {
     }
 }
 //*==== footer area ends  =====*//
+
+//*==== check out area start ====*//
+.check-out {
+    padding-top: 80px;
+    background: #f5f7f8;
+    #validation {
+        .card {
+            box-shadow: none;
+            background: none;
+            .card-header {
+                padding-bottom: 15px;
+                h3.card-title {
+                    font-size: 30px;
+                }
+            }
+            .card-content {
+                .card-body {
+                    padding: 0;
+                    form {
+                        fieldset {
+                            margin-top: 40px;
+                            .busket {
+                                margin: auto;
+                                width: 100%;
+                                padding: 20px;
+                                border-radius: 5px;
+                                border: 1px solid #bac0c3;
+                                background: $white-color;
+                                @include breakpoint (sm) {
+                                    max-width: 550px;
+                                }
+                                .busket-inner {
+                                    .domain-info {
+                                        border-radius: 5px;
+                                        border: 1px solid #bac0c3;
+                                        ul.info-list {
+                                            padding: 15px;
+                                            margin: 0;
+                                            list-style: none;
+                                            border-bottom: 1px solid #bac0c3;
+                                            li {
+                                                @extend %flex;
+                                                justify-content: space-between;
+                                                span {
+                                                    &.dom-title {
+                                                        font-weight: 600;
+                                                        color: $theme-color;
+                                                    }
+                                                    &.price {
+                                                        color: #09757a;
+                                                        font-weight: 600;
+                                                    }
+                                                    &.d-ico {
+                                                        i {
+                                                            font-weight: 900;
+                                                            color: $theme-color;
+                                                        }
+                                                    }
+                                                }
+                                                select {
+                                                    margin: 10px 0;
+                                                    padding: 5px 10px;
+                                                    border: 1px solid $theme-color;
+                                                }
+                                            }
+                                        }
+                                        .info-des {
+                                            display: block;
+                                            @include breakpoint (sm) {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                            }
+                                            .des-text {
+                                                padding: 40px 10px;
+                                                background: #ffeea9;
+                                                width: 100%;
+                                                @include breakpoint (sm) {
+                                                width: calc(100% - 60%);
+                                                }
+                                                p {
+                                                    margin: 0;
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                            .des-intro {
+                                                width: 100%;
+                                                position: relative;
+                                                padding: 20px 15px;
+                                                @include breakpoint (sm) {
+                                                    width: 60%;
+                                                }
+                                                span {
+                                                    color: #09757a;
+                                                    display: block;
+                                                }
+                                                button.btn {
+                                                    position: absolute;
+                                                    right: 15px;
+                                                    bottom: 15px;
+                                                    padding: 10px 20px;
+                                                    span {
+                                                        color: $white-color
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .card-status{
+                                        @extend %flex;
+                                        padding: 25px 0;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        a {
+                                            font-size: 12px;
+                                            text-decoration: underline;
+                                            &.emp-cart {
+                                                font-weight: 600;
+                                                font-size: 16px;
+                                                color: $theme-color;
+                                            }
+                                        }
+                                    }
+                                    .total-price {
+                                        text-align: center;
+                                        border-top: 1px solid #bac0c3;
+                                        @include breakpoint (sm) {
+                                            padding: 10px 25px;
+                                        }
+                                        .price-inner {
+                                            @extend %flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                            .price-tag {
+                                                h4 {
+                                                    margin: 0;
+                                                    @include breakpoint (sm) {
+                                                        font-size: 30px;
+                                                    }
+                                                }
+                                                span {
+                                                    font-size: 30px;
+                                                    color: #09757a;
+                                                }
+                                            }
+                                        }
+                                        p {
+                                            margin: 0;
+                                            padding: 15px 0 10px;
+                                        }
+                                        a {
+                                            color: $theme-color;
+                                            font-weight: 600;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    .checkOut-btn {
+                                        button.btn {
+
+                                        }
+                                    }
+                                }
+                            }
+                            .create-accout {
+                                width: 100%;
+                                margin: auto;
+                                padding: 10px;
+                                border-radius: 5px;
+                                border: 1px solid #bac0c3;
+                                background: $white-color;
+                                @include breakpoint (sm) {
+                                    padding: 15px;
+                                    max-width: 550px;
+                                }
+                                .account-inner {
+                                    padding: 15px;
+                                    border-radius: 5px;
+                                    border: 1px solid #bac0c3;
+                                    @include breakpoint (sm) {
+                                        margin: 10px;
+                                    }
+                                    .form-header {
+                                        text-align: center;
+                                        p {
+                                            a {
+                                                color: #87ceeb;
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .create-social {
+                                        text-align: center;
+                                        ul.media-list {
+                                            margin: 0;
+                                            padding: 0;
+                                            @extend %flex;
+                                            justify-content: center;
+                                            li {
+                                                list-style: none;
+                                                margin: 5px;
+                                                width: calc(100% / 2 - 10px);
+                                                a {
+                                                    padding: 10px;
+                                                    width: 100%;
+                                                    color: $theme-color;
+                                                    font-weight: 600;
+                                                    text-decoration: none;
+                                                    display: inline-block;
+                                                    border: 2px solid $theme-color;
+                                                    span {
+                                                        @include breakpoint (max-mobile) {
+                                                            font-size: 12px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .or {
+                                            p {
+                                                color: $theme-color;
+                                            }
+                                        }
+                                    }
+                                    .submit-btn {
+                                        button.btn {
+                                            padding: 10px;
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                            .billing-info, .payment-info {
+                                margin: auto;
+                                width: 100%;
+                                padding: 20px;
+                                border: 1px solid #bac0c3;
+                                background: $white-color;
+                                @include breakpoint (sm) {
+                                    max-width: 550px;
+                                }
+                                .input-group {
+                                    select {
+                                        width: 100%;
+                                        padding: 10px;
+                                        height: 40px;
+                                        margin-bottom: 15px;
+                                        border: 1px solid $theme-color;
+                                    }
+                                }
+                                .input-btn {
+                                    button.btn {
+                                        padding: 10px;
+                                        width: 100%;
+                                    }
+                                }
+                                .form-check {
+                                    padding-left: 2.5rem;
+                                    label.form-check-label {
+                                        font-size: 22px;
+                                        font-weight: 600;
+                                        color: $theme-color;
+                                    }
+                                    .card-list {
+                                        display: flex;
+                                        img {
+                                            height: 20px;
+                                            width: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*==== check out area start ====*//
+
+
+//*===== empty busket css start ====*//
+.empty-busket {
+    padding: 80px 0;
+    background: #f5f7f8;
+    .section-wrapper {
+        .busket-content {
+            .content-inner {
+                margin: auto;
+                border-radius: 3px;
+                max-width: 520px;
+                background: $white-color;
+                border: 1px solid #d6d6d6;
+                .inner-des {
+                    margin: 20px 30px;
+                    padding: 50px 20px;
+                    text-align: center;
+                    border-radius: 8px;
+                    background: #f5f7f8;
+                    .inner-icon {
+                        i {
+                            opacity: .3;
+                            font-size: 85px;
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        opacity: .5;
+                        font-weight: 500;
+                        padding: 12px 0 15px;
+                        @include breakpoint (sm) {
+                            font-size: 18px;
+                        }
+                    }
+                    a {
+                        color: $theme-color;
+                        font-weight: 600;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .inner-search {
+                margin: auto;
+                max-width: 420px;
+                span.title {
+                    font-size: 16px;
+                    padding: 15px 0 20px;
+                    display: inline-block;
+                    color: $theme-color;
+                }
+                .search-domain {
+                    width: 100%;
+                    @extend %flex;
+                    align-items: center;
+                    input.form-control {
+                        height: 40px;
+                        border-radius: 0;
+                        width: calc(100% - 15%);
+                        &:focus {
+                            outline: 0;
+                            box-shadow: none;
+                        }
+                    }
+                    button.btn {
+                        width: 15%;
+                        height: 40px;
+                        padding: 0;
+                        span {
+                            i {
+                                position: relative;
+                                left: 0;
+                                top: 0;
+                                transform: scale(1) translateY(20%)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*===== empty busket css ends  ====*//

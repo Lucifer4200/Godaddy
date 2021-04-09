@@ -517,7 +517,7 @@ form button.custom-btn {
   border-radius: 5px; }
 
 /*======= all scrollbar css =====*/
-.post-item .post-text.style-one, header .header-bg .header-item, header .header-bg .header-item .header-left, header .header-bg .header-item .header-left .left-menu ul.left-list li .menu-rwo .menu-colum, header .header-bg .header-item .right-menu ul.right-list, .banner-area .content-positon, .navigation-search .search-content, .navigation-search .domain-price ul.price-list, .recommended-area .section-wrapper .reccommended-item, .recommended-area .section-wrapper .reccommended-item ul.item-list, .why-godaddy .section-wrapper, .why-godaddy .section-wrapper .godaddy-content .go-search, .why-godaddy .section-wrapper .godaddy-content .art-link ul.link-list, footer .footer-middle .footer-item, footer .footer-bottom .bottom-inner, footer .footer-bottom .bottom-inner .bottom-media ul.media-list {
+.post-item .post-text.style-one, header .header-bg .header-item, header .header-bg .header-item .header-left, header .header-bg .header-item .header-left .left-menu ul.left-list li .menu-rwo .menu-colum, header .header-bg .header-item .right-menu ul.right-list, .banner-area .content-positon, .navigation-search .search-content, .navigation-search .domain-price ul.price-list, .recommended-area .section-wrapper .reccommended-item, .recommended-area .section-wrapper .reccommended-item ul.item-list, .why-godaddy .section-wrapper, .why-godaddy .section-wrapper .godaddy-content .go-search, .why-godaddy .section-wrapper .godaddy-content .art-link ul.link-list, footer .footer-middle .footer-item, footer .footer-bottom .bottom-inner, footer .footer-bottom .bottom-inner .bottom-media ul.media-list, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .card-status, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner, .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social ul.media-list, .empty-busket .section-wrapper .busket-content .inner-search .search-domain {
   display: flex;
   flex-wrap: wrap; }
 
@@ -1368,5 +1368,257 @@ footer {
             footer .footer-bottom .bottom-inner .bottom-media ul.media-list li a i {
               font-size: 30px;
               color: #fff; }
+
+.check-out {
+  padding-top: 80px;
+  background: #f5f7f8; }
+  .check-out #validation .card {
+    box-shadow: none;
+    background: none; }
+    .check-out #validation .card .card-header {
+      padding-bottom: 15px; }
+      .check-out #validation .card .card-header h3.card-title {
+        font-size: 30px; }
+    .check-out #validation .card .card-content .card-body {
+      padding: 0; }
+      .check-out #validation .card .card-content .card-body form fieldset {
+        margin-top: 40px; }
+        .check-out #validation .card .card-content .card-body form fieldset .busket {
+          margin: auto;
+          width: 100%;
+          padding: 20px;
+          border-radius: 5px;
+          border: 1px solid #bac0c3;
+          background: #fff; }
+          @media (min-width: 576px) {
+            .check-out #validation .card .card-content .card-body form fieldset .busket {
+              max-width: 550px; } }
+          .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info {
+            border-radius: 5px;
+            border: 1px solid #bac0c3; }
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list {
+              padding: 15px;
+              margin: 0;
+              list-style: none;
+              border-bottom: 1px solid #bac0c3; }
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li {
+                justify-content: space-between; }
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li span.dom-title {
+                  font-weight: 600;
+                  color: #111; }
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li span.price {
+                  color: #09757a;
+                  font-weight: 600; }
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li span.d-ico i {
+                  font-weight: 900;
+                  color: #111; }
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li select {
+                  margin: 10px 0;
+                  padding: 5px 10px;
+                  border: 1px solid #111; }
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des {
+              display: block; }
+              @media (min-width: 576px) {
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des {
+                  display: flex;
+                  flex-wrap: wrap; } }
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-text {
+                padding: 40px 10px;
+                background: #ffeea9;
+                width: 100%; }
+                @media (min-width: 576px) {
+                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-text {
+                    width: calc(100% - 60%); } }
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-text p {
+                  margin: 0;
+                  font-size: 14px; }
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-intro {
+                width: 100%;
+                position: relative;
+                padding: 20px 15px; }
+                @media (min-width: 576px) {
+                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-intro {
+                    width: 60%; } }
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-intro span {
+                  color: #09757a;
+                  display: block; }
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-intro button.btn {
+                  position: absolute;
+                  right: 15px;
+                  bottom: 15px;
+                  padding: 10px 20px; }
+                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-intro button.btn span {
+                    color: #fff; }
+          .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .card-status {
+            padding: 25px 0;
+            align-items: center;
+            justify-content: space-between; }
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .card-status a {
+              font-size: 12px;
+              text-decoration: underline; }
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .card-status a.emp-cart {
+                font-weight: 600;
+                font-size: 16px;
+                color: #111; }
+          .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price {
+            text-align: center;
+            border-top: 1px solid #bac0c3; }
+            @media (min-width: 576px) {
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price {
+                padding: 10px 25px; } }
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner {
+              align-items: center;
+              justify-content: space-between; }
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner .price-tag h4 {
+                margin: 0; }
+                @media (min-width: 576px) {
+                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner .price-tag h4 {
+                    font-size: 30px; } }
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner .price-tag span {
+                font-size: 30px;
+                color: #09757a; }
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price p {
+              margin: 0;
+              padding: 15px 0 10px; }
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price a {
+              color: #111;
+              font-weight: 600;
+              text-decoration: underline; }
+        .check-out #validation .card .card-content .card-body form fieldset .create-accout {
+          width: 100%;
+          margin: auto;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #bac0c3;
+          background: #fff; }
+          @media (min-width: 576px) {
+            .check-out #validation .card .card-content .card-body form fieldset .create-accout {
+              padding: 15px;
+              max-width: 550px; } }
+          .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner {
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #bac0c3; }
+            @media (min-width: 576px) {
+              .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner {
+                margin: 10px; } }
+            .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .form-header {
+              text-align: center; }
+              .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .form-header p a {
+                color: #87ceeb;
+                text-decoration: underline; }
+            .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social {
+              text-align: center; }
+              .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social ul.media-list {
+                margin: 0;
+                padding: 0;
+                justify-content: center; }
+                .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social ul.media-list li {
+                  list-style: none;
+                  margin: 5px;
+                  width: calc(100% / 2 - 10px); }
+                  .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social ul.media-list li a {
+                    padding: 10px;
+                    width: 100%;
+                    color: #111;
+                    font-weight: 600;
+                    text-decoration: none;
+                    display: inline-block;
+                    border: 2px solid #111; }
+                    @media (max-width: 375px) {
+                      .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social ul.media-list li a span {
+                        font-size: 12px; } }
+              .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social .or p {
+                color: #111; }
+            .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .submit-btn button.btn {
+              padding: 10px;
+              width: 100%; }
+        .check-out #validation .card .card-content .card-body form fieldset .billing-info, .check-out #validation .card .card-content .card-body form fieldset .payment-info {
+          margin: auto;
+          width: 100%;
+          padding: 20px;
+          border: 1px solid #bac0c3;
+          background: #fff; }
+          @media (min-width: 576px) {
+            .check-out #validation .card .card-content .card-body form fieldset .billing-info, .check-out #validation .card .card-content .card-body form fieldset .payment-info {
+              max-width: 550px; } }
+          .check-out #validation .card .card-content .card-body form fieldset .billing-info .input-group select, .check-out #validation .card .card-content .card-body form fieldset .payment-info .input-group select {
+            width: 100%;
+            padding: 10px;
+            height: 40px;
+            margin-bottom: 15px;
+            border: 1px solid #111; }
+          .check-out #validation .card .card-content .card-body form fieldset .billing-info .input-btn button.btn, .check-out #validation .card .card-content .card-body form fieldset .payment-info .input-btn button.btn {
+            padding: 10px;
+            width: 100%; }
+          .check-out #validation .card .card-content .card-body form fieldset .billing-info .form-check, .check-out #validation .card .card-content .card-body form fieldset .payment-info .form-check {
+            padding-left: 2.5rem; }
+            .check-out #validation .card .card-content .card-body form fieldset .billing-info .form-check label.form-check-label, .check-out #validation .card .card-content .card-body form fieldset .payment-info .form-check label.form-check-label {
+              font-size: 22px;
+              font-weight: 600;
+              color: #111; }
+            .check-out #validation .card .card-content .card-body form fieldset .billing-info .form-check .card-list, .check-out #validation .card .card-content .card-body form fieldset .payment-info .form-check .card-list {
+              display: flex; }
+              .check-out #validation .card .card-content .card-body form fieldset .billing-info .form-check .card-list img, .check-out #validation .card .card-content .card-body form fieldset .payment-info .form-check .card-list img {
+                height: 20px;
+                width: 30px; }
+
+.empty-busket {
+  padding: 80px 0;
+  background: #f5f7f8; }
+  .empty-busket .section-wrapper .busket-content .content-inner {
+    margin: auto;
+    border-radius: 3px;
+    max-width: 520px;
+    background: #fff;
+    border: 1px solid #d6d6d6; }
+    .empty-busket .section-wrapper .busket-content .content-inner .inner-des {
+      margin: 20px 30px;
+      padding: 50px 20px;
+      text-align: center;
+      border-radius: 8px;
+      background: #f5f7f8; }
+      .empty-busket .section-wrapper .busket-content .content-inner .inner-des .inner-icon i {
+        opacity: .3;
+        font-size: 85px; }
+      .empty-busket .section-wrapper .busket-content .content-inner .inner-des p {
+        margin: 0;
+        opacity: .5;
+        font-weight: 500;
+        padding: 12px 0 15px; }
+        @media (min-width: 576px) {
+          .empty-busket .section-wrapper .busket-content .content-inner .inner-des p {
+            font-size: 18px; } }
+      .empty-busket .section-wrapper .busket-content .content-inner .inner-des a {
+        color: #111;
+        font-weight: 600;
+        text-decoration: underline; }
+  .empty-busket .section-wrapper .busket-content .inner-search {
+    margin: auto;
+    max-width: 420px; }
+    .empty-busket .section-wrapper .busket-content .inner-search span.title {
+      font-size: 16px;
+      padding: 15px 0 20px;
+      display: inline-block;
+      color: #111; }
+    .empty-busket .section-wrapper .busket-content .inner-search .search-domain {
+      width: 100%;
+      align-items: center; }
+      .empty-busket .section-wrapper .busket-content .inner-search .search-domain input.form-control {
+        height: 40px;
+        border-radius: 0;
+        width: calc(100% - 15%); }
+        .empty-busket .section-wrapper .busket-content .inner-search .search-domain input.form-control:focus {
+          outline: 0;
+          box-shadow: none; }
+      .empty-busket .section-wrapper .busket-content .inner-search .search-domain button.btn {
+        width: 15%;
+        height: 40px;
+        padding: 0; }
+        .empty-busket .section-wrapper .busket-content .inner-search .search-domain button.btn span i {
+          position: relative;
+          left: 0;
+          top: 0;
+          transform: scale(1) translateY(20%); }
 
 /*# sourceMappingURL=style.css.map */
