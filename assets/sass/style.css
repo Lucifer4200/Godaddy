@@ -86,8 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #1f202a;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  line-height: 1.5;
-  text-transform: capitalize; }
+  line-height: 1.5; }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
   color: inherit;
@@ -517,7 +516,7 @@ form button.custom-btn {
   border-radius: 5px; }
 
 /*======= all scrollbar css =====*/
-.post-item .post-text.style-one, header .header-bg .header-item, header .header-bg .header-item .header-left, header .header-bg .header-item .header-left .left-menu ul.left-list li .menu-rwo .menu-colum, header .header-bg .header-item .right-menu ul.right-list, .banner-area .content-positon, .navigation-search .search-content, .navigation-search .domain-price ul.price-list, .recommended-area .section-wrapper .reccommended-item, .recommended-area .section-wrapper .reccommended-item ul.item-list, .why-godaddy .section-wrapper, .why-godaddy .section-wrapper .godaddy-content .go-search, .why-godaddy .section-wrapper .godaddy-content .art-link ul.link-list, footer .footer-middle .footer-item, footer .footer-bottom .bottom-inner, footer .footer-bottom .bottom-inner .bottom-media ul.media-list, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .card-status, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner, .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social ul.media-list, .empty-busket .section-wrapper .busket-content .inner-search .search-domain {
+.post-item .post-text.style-one, header .header-bg .header-item, header .header-bg .header-item .header-left, header .header-bg .header-item .header-left .left-menu ul.left-list li .menu-rwo .menu-colum, header .header-bg .header-item .right-menu ul.right-list, .banner-area .content-positon, .navigation-search .search-content, .navigation-search .domain-price ul.price-list, .product-banner .banner-header ul.header-list, .recommended-area .section-wrapper .reccommended-item, .recommended-area .section-wrapper .reccommended-item ul.item-list, .why-godaddy .section-wrapper, .why-godaddy .section-wrapper .godaddy-content .go-search, .why-godaddy .section-wrapper .godaddy-content .art-link ul.link-list, footer .footer-middle .footer-item, footer .footer-bottom .bottom-inner, footer .footer-bottom .bottom-inner .bottom-media ul.media-list, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .card-status, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner, .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social ul.media-list, .empty-busket .section-wrapper .busket-content .inner-search .search-domain {
   display: flex;
   flex-wrap: wrap; }
 
@@ -854,6 +853,8 @@ header .header-bg {
             header .header-bg .header-item .right-menu ul.right-list li a span i {
               color: #000;
               font-size: 20px; }
+  header .header-bg.style-one {
+    background: #e8c011; }
 
 .banner-area {
   padding: 53px 0;
@@ -1001,6 +1002,89 @@ header .header-bg {
     justify-content: space-between; }
     .navigation-search .domain-price ul.price-list li a span.price {
       font-size: 12px; }
+
+.product-banner {
+  position: relative;
+  min-height: 600px;
+  padding: 40px 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../assets/images/banner/04.jpg); }
+  @media (min-width: 576px) {
+    .product-banner {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      background-image: url(../../assets/images/banner/03.jpg); } }
+  .product-banner .banner-header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0; }
+    @media (min-width: 576px) {
+      .product-banner .banner-header {
+        opacity: 1;
+        left: 40px; } }
+    .product-banner .banner-header ul.header-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      align-items: center;
+      justify-content: flex-start; }
+      .product-banner .banner-header ul.header-list li {
+        margin: 5px 10px; }
+        .product-banner .banner-header ul.header-list li:nth-child(1) {
+          padding-right: 15px;
+          border-right: 1px solid #111; }
+        .product-banner .banner-header ul.header-list li strong {
+          color: #111; }
+  .product-banner .banner-position {
+    display: block;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 576px) {
+      .product-banner .banner-position {
+        display: flex;
+        flex-wrap: wrap; } }
+    .product-banner .banner-position .content-text {
+      width: 100%;
+      text-align: center; }
+      @media (min-width: 576px) {
+        .product-banner .banner-position .content-text {
+          text-align: left;
+          width: calc(100% - 50%); } }
+      .product-banner .banner-position .content-text span {
+        color: #111;
+        font-size: 18px; }
+      .product-banner .banner-position .content-text h3 {
+        margin: auto;
+        line-height: 1.3; }
+        @media (min-width: 576px) {
+          .product-banner .banner-position .content-text h3 {
+            font-size: 40px;
+            max-width: 500px;
+            margin-left: 0; } }
+      .product-banner .banner-position .content-text ul.item-list {
+        margin: 0;
+        padding: 30px 0 20px;
+        list-style: none; }
+        .product-banner .banner-position .content-text ul.item-list li {
+          margin-bottom: 10px; }
+          .product-banner .banner-position .content-text ul.item-list li span {
+            font-size: 16px; }
+            .product-banner .banner-position .content-text ul.item-list li span i {
+              margin-right: 10px; }
+      .product-banner .banner-position .content-text button.btn span {
+        color: #fff; }
+    .product-banner .banner-position .content-empty {
+      width: 100%;
+      min-height: 280px; }
+      @media (min-width: 576px) {
+        .product-banner .banner-position .content-empty {
+          width: 50%; } }
+      @media (min-width: 768px) {
+        .product-banner .banner-position .content-empty {
+          min-height: 400px; } }
 
 .recommended-area {
   padding: 40px 0; }
@@ -1620,5 +1704,127 @@ footer {
           left: 0;
           top: 0;
           transform: scale(1) translateY(20%); }
+
+.hosting-price {
+  padding: 80px 0; }
+  .hosting-price .section-header {
+    text-align: center; }
+    .hosting-price .section-header h3 {
+      margin: 0;
+      font-weight: 600;
+      line-height: 1.2; }
+      @media (min-width: 576px) {
+        .hosting-price .section-header h3 {
+          font-size: 50px; } }
+  .hosting-price .section-wrapper nav .nav-tabs {
+    padding: 50px 0;
+    justify-content: center; }
+    .hosting-price .section-wrapper nav .nav-tabs button.nav-link {
+      padding: 20px 40px;
+      border-bottom: 1px solid #111; }
+      @media (max-width: 375px) {
+        .hosting-price .section-wrapper nav .nav-tabs button.nav-link {
+          margin: 5px; } }
+      .hosting-price .section-wrapper nav .nav-tabs button.nav-link:hover {
+        border: 0;
+        border-bottom: 1px solid #111; }
+      .hosting-price .section-wrapper nav .nav-tabs button.nav-link:focus {
+        outline: 0;
+        box-shadow: none; }
+      .hosting-price .section-wrapper nav .nav-tabs button.nav-link.active {
+        color: #00A4A6;
+        border: 1px solid #00A4A6;
+        border-bottom: 3px solid #09757a; }
+  @media (max-width: 575px) {
+    .hosting-price .section-wrapper .tab-content {
+      padding: 0 10px; } }
+  .hosting-price .section-wrapper .tab-content .tab-pane .col-lg-3.col-md-6.col-12.border-end.p-0:nth-child(1) {
+    border-bottom: 1px solid #ccc; }
+    @media (min-width: 992px) {
+      .hosting-price .section-wrapper .tab-content .tab-pane .col-lg-3.col-md-6.col-12.border-end.p-0:nth-child(1) {
+        border-bottom: 0; } }
+  .hosting-price .section-wrapper .tab-content .tab-pane .col-lg-3.col-md-6.col-12.border-end.p-0:nth-child(2) {
+    border-bottom: 1px solid #ccc; }
+    @media (min-width: 992px) {
+      .hosting-price .section-wrapper .tab-content .tab-pane .col-lg-3.col-md-6.col-12.border-end.p-0:nth-child(2) {
+        border-bottom: 0; } }
+  .hosting-price .section-wrapper .tab-content .tab-pane .col-lg-3.col-md-6.col-12.border-end.p-0:nth-child(3) {
+    border-bottom: 1px solid #ccc; }
+    @media (min-width: 768px) {
+      .hosting-price .section-wrapper .tab-content .tab-pane .col-lg-3.col-md-6.col-12.border-end.p-0:nth-child(3) {
+        border-bottom: 0; } }
+  .hosting-price .section-wrapper .tab-content .tab-pane .pricing-content {
+    padding: 40px 25px; }
+    .hosting-price .section-wrapper .tab-content .tab-pane .pricing-content .pricing-text span {
+      font-size: 18px; }
+    .hosting-price .section-wrapper .tab-content .tab-pane .pricing-content .pricing-text P {
+      margin: 0;
+      color: #111; }
+    .hosting-price .section-wrapper .tab-content .tab-pane .pricing-content .pricing-text h4 {
+      margin: 0;
+      font-weight: 600;
+      margin: 8px 0 5px;
+      display: inline-block;
+      background: #ffeea9; }
+    .hosting-price .section-wrapper .tab-content .tab-pane .pricing-content .pricing-text h6 {
+      margin: 0; }
+  .hosting-price .section-wrapper .tab-content .tab-pane .pricing-btn {
+    margin: 25px 0; }
+  .hosting-price .section-wrapper .tab-content .tab-pane .pricing-list ul.list-item {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .hosting-price .section-wrapper .tab-content .tab-pane .pricing-list ul.list-item li {
+      margin-bottom: 15px; }
+      .hosting-price .section-wrapper .tab-content .tab-pane .pricing-list ul.list-item li:last-child {
+        margin-bottom: 0; }
+      .hosting-price .section-wrapper .tab-content .tab-pane .pricing-list ul.list-item li span i {
+        color: #09757a;
+        margin-right: 12px; }
+      .hosting-price .section-wrapper .tab-content .tab-pane .pricing-list ul.list-item li span strong {
+        color: #111; }
+
+.vps-content {
+  padding-bottom: 80px; }
+  .vps-content .vps-text {
+    text-align: center; }
+    .vps-content .vps-text p {
+      margin: 0;
+      font-size: 25px; }
+      .vps-content .vps-text p a {
+        font-weight: 600;
+        color: #09757a; }
+
+.price-plan {
+  padding: 80px 0; }
+  .price-plan .section-header h3 {
+    margin: 0;
+    font-weight: 500;
+    padding-bottom: 20px; }
+  .price-plan .section-wrapper .plan-thumb img {
+    width: 100%; }
+  .price-plan .section-wrapper .plan-text h3 {
+    margin: 0; }
+    @media (max-width: 575px) {
+      .price-plan .section-wrapper .plan-text h3 {
+        font-size: 22px; } }
+  .price-plan .section-wrapper .plan-text p {
+    margin: 0; }
+
+.hosting-include {
+  padding: 80px 0; }
+  .hosting-include .section-header {
+    text-align: center; }
+    .hosting-include .section-header h3 {
+      margin: 0;
+      font-weight: 600; }
+  .hosting-include .section-wrapper {
+    padding-top: 50px; }
+    .hosting-include .section-wrapper .include-item .item-title h4 {
+      margin: 0;
+      font-weight: 500;
+      padding-bottom: 16px; }
+    .hosting-include .section-wrapper .include-item .item-title p {
+      margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

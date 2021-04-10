@@ -872,3 +872,203 @@ footer {
     }
 }
 //*===== empty busket css ends  ====*//
+
+//?======= product page css start =====?//
+
+//*=== product pricing area start  ===*//
+.hosting-price {
+    padding: 80px 0;
+    .section-header {
+        text-align: center;
+        h3 {
+            margin: 0;
+            font-weight: 600;
+            line-height: 1.2;
+            @include breakpoint (sm) {
+                font-size: 50px;
+            }
+        }
+    }
+    .section-wrapper {
+        nav {
+            .nav-tabs {
+                padding: 50px 0;
+                justify-content: center;
+                button.nav-link {
+                    padding: 20px 40px;
+                    border-bottom: 1px solid $theme-color;
+                    @include breakpoint (max-mobile) {
+                        margin: 5px;
+                    }
+                    &:hover {
+                        border: 0;
+                        border-bottom: 1px solid $theme-color;
+                    }
+                    &:focus {
+                        outline: 0;
+                        box-shadow: none;
+                    }
+                    &.active {
+                        color: #00A4A6;
+                        border: 1px solid #00A4A6;
+                        border-bottom: 3px solid #09757a;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            @include breakpoint (max-sm) {
+                padding: 0 10px;
+            }
+            .tab-pane {
+                .col-lg-3.col-md-6.col-12.border-end.p-0:nth-child(1) {
+                    border-bottom: 1px solid #ccc;
+                    @include breakpoint (lg) {
+                        border-bottom: 0;
+                    }
+                }
+                .col-lg-3.col-md-6.col-12.border-end.p-0:nth-child(2) {
+                    border-bottom: 1px solid #ccc;
+                    @include breakpoint (lg) {
+                        border-bottom: 0;
+                    }
+                }
+                .col-lg-3.col-md-6.col-12.border-end.p-0:nth-child(3) {
+                    border-bottom: 1px solid #ccc;
+                    @include breakpoint (md) {
+                        border-bottom: 0;
+                    }
+                }
+                .pricing-content {
+                    padding: 40px 25px;
+                    .pricing-text {
+                        span {
+                            font-size: 18px;
+                        }
+                        P {
+                            margin: 0;
+                            color: $theme-color;
+                        }
+                        h4 {
+                            margin: 0;
+                            font-weight: 600;
+                            margin: 8px 0 5px;
+                            display: inline-block;
+                            background: #ffeea9;
+                        }
+                        h6 {
+                            margin: 0;
+                        }
+                    }
+                    
+                }
+                .pricing-btn {
+                    margin: 25px 0;
+                }
+                .pricing-list {
+                    ul.list-item {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        li {
+                            margin-bottom: 15px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            span {
+                                i {
+                                    color: #09757a;
+                                    margin-right: 12px;
+                                }
+                                strong {
+                                    color: $theme-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== product pricing area ends   ===*//
+
+//*=== vps hosting css start ===*//
+.vps-content {
+    padding-bottom: 80px;
+    .vps-text {
+        text-align: center;
+       p {
+           margin: 0;
+           font-size: 25px;
+        a {
+            
+            font-weight: 600;
+            color: #09757a;
+        }
+       }
+    }
+}
+//*=== vps hosting css start ===*//
+
+//*==== price plan css start ====*//
+.price-plan {
+    padding: 80px 0;
+    .section-header {
+        h3 {
+            margin: 0;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+    }
+    .section-wrapper {
+        .plan-thumb {
+            img {
+                width: 100%;
+            }
+        }
+        .plan-text {
+            h3 {
+                margin: 0;
+                @include breakpoint (max-sm) {
+                    font-size: 22px;
+                }
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+//*==== price plan css start ====*//
+
+//*==== hosting-include css start ====*//
+.hosting-include {
+    padding: 80px 0;
+    .section-header {
+        text-align: center;
+        h3 {
+            margin: 0;
+            font-weight: 600;
+        }
+    }
+    .section-wrapper {
+        padding-top: 50px;
+        .include-item {
+            .item-title {
+                h4 {
+                    margin: 0;
+                    font-weight: 500;
+                    padding-bottom: 16px;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+//*==== hosting-include css start ====*//
+
+
+//?======= product page css ends  =====?//
