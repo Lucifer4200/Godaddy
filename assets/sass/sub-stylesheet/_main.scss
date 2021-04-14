@@ -1072,3 +1072,75 @@ footer {
 
 
 //?======= product page css ends  =====?//
+
+
+//?======= login page css start  =====?//
+body.login-bg {
+    background-size: cover;
+    // background-position: center;
+    background-attachment: fixed;
+    background: #f5f7f8;
+    @include breakpoint (lg) {
+    background-image: url(../../assets/images/login/01.jpg);
+    }
+    .login-auth {
+        padding: 60px 0;
+        .login-card {
+            padding: 20px 0;
+            border-radius: 5px;
+            background: $white-color;
+            @include breakpoint (sm) {
+                padding: 20px 10px;
+            }
+            @include breakpoint (lg) {
+                padding: 30px 20px;
+            }
+            .card-header {
+                border-bottom: 0;
+                text-align: center;
+                background: transparent;
+                h3 {
+                    margin: 0;
+                }
+            }
+            .card-body {
+                form {
+                    .input-group {
+                        padding-bottom: 25px;
+                    }
+                    .input-btn {
+                        padding-bottom: 12px;
+                        button.btn {
+                            padding: 10px;
+                            width: 100%;
+                        }
+                    }
+                    .form-check {
+                        margin-bottom: 20px;
+                    }
+                }
+                .form-footer {
+                    text-align: center;
+                    .media-list {
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                        @extend %flex;
+                        justify-content: center;
+                        li {
+                            width: calc(100% / 2);
+                            a {
+                                display: block;
+                                margin: 5px;
+                                padding: 10px;
+                                text-decoration: none;
+                                border: 2px solid $theme-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//?======= login page css ends   =====?//
