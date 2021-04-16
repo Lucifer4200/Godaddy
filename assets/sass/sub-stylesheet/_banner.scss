@@ -291,3 +291,32 @@
     }
 }
 //*=== product banner area ends  ===*//
+
+//*=== page header area start ===*//
+.page-header {
+    padding: 20px 0;
+    border-top: 1px solid #EBEBEB;
+    .pagerheader-menu {
+        ul.menu-list {
+            padding: 0;
+            margin: 0;
+            @extend %flex;
+            justify-content: flex-start;
+            li {
+                margin: 5px;
+                list-style: none;
+                &:first-child {
+                    margin-right: 12px;
+                }
+                a {
+                    text-decoration: none;
+                    transition: all 0.3s ease-in;
+                    &:hover {
+                        color: #00a4a6;
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== page header area ends  ===*//
