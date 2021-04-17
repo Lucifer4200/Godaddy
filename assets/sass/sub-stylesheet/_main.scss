@@ -1157,7 +1157,87 @@ body.login-bg {
         }
     }
     .section-wrapper {
-        
+        ul.nav-tabs {
+            li.nav-item {
+                button.nav-link {
+                    color: skyblue;
+                    &.active {
+                        font-weight: 600;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            border-left: 1px solid $border-color;
+            border-right: 1px solid $border-color;
+            background: $white-color;
+            .tab-pane {
+                .manage-billing {
+                    .billing-header {
+                        @extend %flex;
+                        padding: 15px;
+                        justify-content: space-between;
+                        .header-left {
+                            ul.left-list {
+                                margin: 0;
+                                padding: 0;
+                                @extend %flex;
+                                list-style: none;
+                                align-items: center;
+                                li {
+                                    margin: 5px;
+                                    button.custom-btn {
+                                        color: $white-color;
+                                        padding: 5px 10px;
+                                        &:disabled {
+                                            background: #a0a0a0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .header-right {
+                            button {
+                                margin: 5px;
+                                padding: 5px 10px;
+                                border: 1px solid #000;
+                                background: transparent;
+                                span {
+                                    color: #000;
+                                    i {
+                                        margin-right: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .payment-confirm {
+                    @extend %flex;
+                    max-width: 350px;
+                    margin-left: 0;
+                    padding: 20px;
+                    border-radius: 5px;
+                    align-items: flex-start;
+                    background: #d3c1f7;
+                    .conf-icon {
+                        width: 10%;
+                    }
+                    .conf-text {
+                        width: calc(100% - 10%);
+                        h4 {
+                            margin: 0;
+                            font-weight: 500;
+                        }
+                        p {
+                            margin: 0;
+                            padding: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 //*=== purchase-area css start ===*//

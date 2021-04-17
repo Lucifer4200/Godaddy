@@ -215,19 +215,148 @@
             <div class="section-wrapper">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Subscriptions</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Order History</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Payment Methods</button>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="manage-billing">
+                            <div class="billing-header">
+                                <div class="header-left">
+                                    <ul class="left-list">
+                                        <li>
+                                            <button type="button" class="custom-btn" disabled>
+                                                <span><i class="fa fa-shopping-cart"></i></span>
+                                                <span>Loading...</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="custom-btn" disabled>
+                                                <span><i class="fa fa-spinner"></i></span>
+                                                <span>Auto Renew On</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="custom-btn" disabled>
+                                                <span><i class="fa fa-times-circle"></i></span>
+                                                <span>Cancel Renewal</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="custom-btn" disabled>
+                                                <span><i class="fas fa-address-book"></i></span>
+                                                <span>Update</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header-right">
+                                    <button type="button"><span><i class="fas fa-filter"></i></span><span>Filters</span></button>
+                                </div>
+                            </div>
+                            <div class="billing-table">
+                                <table class="table  table-hover table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Billing Date</th>
+                                        <th scope="col">Payment Method</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>Lucifer</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="manage-billing">
+                            <div class="billing-header">
+                                <div class="header-left">
+                                    <ul class="left-list">
+                                        <li>
+                                            <button type="button" class="custom-btn" disabled>
+                                                <span><i class="fa fa-download"></i></span>
+                                                <span>Export to CSV</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header-right">
+                                    <button type="button"><span><i class="fas fa-filter"></i></span><span>Filters</span></button>
+                                </div>
+                            </div>
+                            <div class="billing-table">
+                                <table class="table  table-hover table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Order #</th>
+                                        <th scope="col">Billing Date</th>
+                                        <th scope="col">Amount</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>Lucifer</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="payment-confirm">
+                            <div class="conf-icon">
+                                <i class="fa fa-exclamation-circle"></i>
+                            </div>
+                            <div class="conf-text">
+                                <h4>No Payment Method</h4>
+                                <p>Your first payment method will be <br> added upon subscribing to a product.</p>
+                                <a href="#0">Back To Shopping</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
