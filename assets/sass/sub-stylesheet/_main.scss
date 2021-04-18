@@ -1244,3 +1244,118 @@ body.login-bg {
 
 //?==== purchase page css ends  ====?//
 
+
+//?==== purchase page css start ====?//
+
+//*=== edit profile start === *//
+.edit-profile {
+    padding: 60px 0;
+    background: #f5f7f8;
+    .section-header {
+        padding-bottom: 20px;
+    }
+    .section-wrapper {
+        .edit-form {
+            padding: 30px 20px;
+            border: 1px solid $border-color;
+            background: $white-color;
+            form {
+                .input-group {
+                    input.form-control {
+                        border: 1px solid #e8e8e8;
+                    }
+                    label {
+                        margin-bottom: 5px;
+                        font-weight: 600;
+                        display: inline-block;
+                    }
+                    select {
+                        width: 100%;
+                        height: 40px;
+                        padding: 10px;
+                        border: 1px solid #e8e8e8;
+                    }
+
+                    .input-sellect {
+                        width: 100%;
+                        @extend %flex;
+                        align-items: center;
+                        select {
+                            width: 40%;
+                            height: 40px;
+                            border-radius: 0;
+                        }
+                        input.form-control {
+                            border-radius: 0;
+                            width: calc(100% - 40%);
+                        }
+                    }
+                }
+                .input-btn {
+                    button.btn {
+                        background: silver;
+                        padding: 10px 25px;
+                    }
+                    button.custom-btn {
+                        color: skyblue;
+                        margin-left: 10px;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+        .edit-card {
+            margin-top: 30px;
+            .card {
+                padding: 30px 20px;
+                text-align: center;
+                .card-icon {
+                    i {
+                        font-size: 35px;
+                        color: $theme-color;
+                    }
+                }
+                .card-text {
+                    h4 {
+                        margin: 0;
+                        font-weight: 500;
+                        padding: 12px 0 8px;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== edit profile start === *//
+
+//*=== support area start === *//
+.support-area {
+    padding: 60px 0;
+    .section-header {
+        padding-bottom: 30px;
+    }
+    .section-wrapper {
+        .text-item {
+            padding-bottom: 30px;
+            .text-column {
+                p {
+                    margin: 0;
+                    a {
+                        color: #00a4a6;
+                        display: inline-block;
+                        padding-bottom: 7px;
+                        text-decoration: underline;
+                    }
+                    span {
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== support area start === *//
+

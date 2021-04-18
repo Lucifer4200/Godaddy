@@ -320,3 +320,42 @@
     }
 }
 //*=== page header area ends  ===*//
+
+//*=== contact banner area start ===*//
+.contact-banner {
+    padding: 60px 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../assets/images/banner/cont.png);
+    .banner-content {
+        h3 {
+            font-weight: 400;
+            color: $white-color;
+        }
+        h4 {
+            margin: 0;
+            font-weight: 500;
+            color: $white-color;
+            @include breakpoint (sm) {
+                font-size: 30px;
+            }
+        }
+        h2 {
+            margin: 0;
+            line-height: 1;
+            font-weight: 300;
+            color: $white-color;
+        }
+        span {
+            color: $white-color;
+            display: block;
+        }
+        p {
+            margin: 0;
+            font-size: 14px;
+            padding-top: 30px;
+            color: $white-color;
+        }
+    }
+}
+//*=== contact banner area ends  ===*//
