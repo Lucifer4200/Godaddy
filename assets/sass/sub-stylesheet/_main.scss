@@ -540,9 +540,23 @@ footer {
                                 border: 1px solid #bac0c3;
                                 background: $white-color;
                                 @include breakpoint (sm) {
-                                    max-width: 550px;
+                                    max-width: 750px;
                                 }
-                                .busket-inner {
+                                .busket-table {
+                                    .table-responsive {
+                                        .table {
+                                            tbody {
+                                                tr {
+                                                    th {
+                                                        min-width: 80px;
+                                                    }
+                                                    td {
+                                                        min-width: 200px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                     .domain-info {
                                         border-radius: 5px;
                                         border: 1px solid #bac0c3;
@@ -1358,4 +1372,47 @@ body.login-bg {
     }
 }
 //*=== support area start === *//
+
+//*=== about contact css start ===*//
+.about-contact {
+    padding: 60px 0;
+    background: #f8f9fa;
+    @include breakpoint (sm) {
+        padding: 80px 0;
+    }
+    .section-wrapper {
+        position: relative;
+        overflow: visible;
+        &::after {
+            position: absolute;
+            content: "\f291";
+            font-family: "Font Awesome 5 Brands";
+            right: 0;
+            top: 50%;
+            font-size: 45px;
+            opacity: .8;
+            transform: translateY(-50%);
+        }
+        .about-form {
+            padding: 25px;
+            border-radius: 5px;
+            background: $white-color;
+            @extend %shadow;
+            form {
+                .input-group {
+                    input.form-control, textarea {
+                        background: #f8f9fa;
+                    }
+                }
+                .input-btn {
+                    button.btn {
+                        padding: 8px 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== about contact css ends  ===*//
+
 

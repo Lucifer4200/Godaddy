@@ -516,13 +516,16 @@ form button.custom-btn {
   border-radius: 5px; }
 
 /*======= all scrollbar css =====*/
-.post-item .post-text.style-one, header .header-bg .header-item, header .header-bg .header-item .header-left, header .header-bg .header-item .header-left .left-menu ul.left-list li .menu-rwo .menu-colum, header .header-bg .header-item .right-menu ul.right-list, .banner-area .content-positon, .navigation-search .search-content, .navigation-search .domain-price ul.price-list, .product-banner .banner-header ul.header-list, .page-header .pagerheader-menu ul.menu-list, .recommended-area .section-wrapper .reccommended-item, .recommended-area .section-wrapper .reccommended-item ul.item-list, .why-godaddy .section-wrapper, .why-godaddy .section-wrapper .godaddy-content .go-search, .why-godaddy .section-wrapper .godaddy-content .art-link ul.link-list, footer .footer-middle .footer-item, footer .footer-bottom .bottom-inner, footer .footer-bottom .bottom-inner .bottom-media ul.media-list, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .card-status, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner, .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social ul.media-list, .empty-busket .section-wrapper .busket-content .inner-search .search-domain, body.login-bg .login-auth .login-card .card-body .form-footer .media-list, .purchase-area .section-wrapper .tab-content .tab-pane .manage-billing .billing-header, .purchase-area .section-wrapper .tab-content .tab-pane .manage-billing .billing-header .header-left ul.left-list, .purchase-area .section-wrapper .tab-content .tab-pane .payment-confirm, .edit-profile .section-wrapper .edit-form form .input-group .input-sellect {
+.post-item .post-text.style-one, header .header-bg .header-item, header .header-bg .header-item .header-left, header .header-bg .header-item .header-left .left-menu ul.left-list li .menu-rwo .menu-colum, header .header-bg .header-item .right-menu ul.right-list, .banner-area .content-positon, .navigation-search .search-content, .navigation-search .domain-price ul.price-list, .product-banner .banner-header ul.header-list, .page-header .pagerheader-menu ul.menu-list, .recommended-area .section-wrapper .reccommended-item, .recommended-area .section-wrapper .reccommended-item ul.item-list, .why-godaddy .section-wrapper, .why-godaddy .section-wrapper .godaddy-content .go-search, .why-godaddy .section-wrapper .godaddy-content .art-link ul.link-list, footer .footer-middle .footer-item, footer .footer-bottom .bottom-inner, footer .footer-bottom .bottom-inner .bottom-media ul.media-list, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info ul.info-list li, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .card-status, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .total-price .price-inner, .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social ul.media-list, .empty-busket .section-wrapper .busket-content .inner-search .search-domain, body.login-bg .login-auth .login-card .card-body .form-footer .media-list, .purchase-area .section-wrapper .tab-content .tab-pane .manage-billing .billing-header, .purchase-area .section-wrapper .tab-content .tab-pane .manage-billing .billing-header .header-left ul.left-list, .purchase-area .section-wrapper .tab-content .tab-pane .payment-confirm, .edit-profile .section-wrapper .edit-form form .input-group .input-sellect {
   display: flex;
   flex-wrap: wrap; }
 
 .banner-area::after, .why-godaddy::after, .why-godaddy .section-header span::before {
   position: absolute;
   content: ''; }
+
+.about-contact .section-wrapper .about-form {
+  box-shadow: 0 5px 10px 0 rgba(55, 70, 66, 0.12); }
 
 .btn-facebook {
   background: #3b5998; }
@@ -1523,95 +1526,99 @@ footer {
           background: #fff; }
           @media (min-width: 576px) {
             .check-out #validation .card .card-content .card-body form fieldset .busket {
-              max-width: 550px; } }
-          .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info {
+              max-width: 750px; } }
+          .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .table-responsive .table tbody tr th {
+            min-width: 80px; }
+          .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .table-responsive .table tbody tr td {
+            min-width: 200px; }
+          .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info {
             border-radius: 5px;
             border: 1px solid #bac0c3; }
-            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list {
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info ul.info-list {
               padding: 15px;
               margin: 0;
               list-style: none;
               border-bottom: 1px solid #bac0c3; }
-              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li {
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info ul.info-list li {
                 justify-content: space-between; }
-                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li span.dom-title {
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info ul.info-list li span.dom-title {
                   font-weight: 600;
                   color: #111; }
-                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li span.price {
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info ul.info-list li span.price {
                   color: #09757a;
                   font-weight: 600; }
-                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li span.d-ico i {
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info ul.info-list li span.d-ico i {
                   font-weight: 900;
                   color: #111; }
-                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info ul.info-list li select {
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info ul.info-list li select {
                   margin: 10px 0;
                   padding: 5px 10px;
                   border: 1px solid #111; }
-            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des {
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info .info-des {
               display: block; }
               @media (min-width: 576px) {
-                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des {
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info .info-des {
                   display: flex;
                   flex-wrap: wrap; } }
-              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-text {
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info .info-des .des-text {
                 padding: 40px 10px;
                 background: #ffeea9;
                 width: 100%; }
                 @media (min-width: 576px) {
-                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-text {
+                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info .info-des .des-text {
                     width: calc(100% - 60%); } }
-                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-text p {
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info .info-des .des-text p {
                   margin: 0;
                   font-size: 14px; }
-              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-intro {
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info .info-des .des-intro {
                 width: 100%;
                 position: relative;
                 padding: 20px 15px; }
                 @media (min-width: 576px) {
-                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-intro {
+                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info .info-des .des-intro {
                     width: 60%; } }
-                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-intro span {
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info .info-des .des-intro span {
                   color: #09757a;
                   display: block; }
-                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-intro button.btn {
+                .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info .info-des .des-intro button.btn {
                   position: absolute;
                   right: 15px;
                   bottom: 15px;
                   padding: 10px 20px; }
-                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .domain-info .info-des .des-intro button.btn span {
+                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info .info-des .des-intro button.btn span {
                     color: #fff; }
-          .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .card-status {
+          .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .card-status {
             padding: 25px 0;
             align-items: center;
             justify-content: space-between; }
-            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .card-status a {
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .card-status a {
               font-size: 12px;
               text-decoration: underline; }
-              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .card-status a.emp-cart {
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .card-status a.emp-cart {
                 font-weight: 600;
                 font-size: 16px;
                 color: #111; }
-          .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price {
+          .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .total-price {
             text-align: center;
             border-top: 1px solid #bac0c3; }
             @media (min-width: 576px) {
-              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price {
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .total-price {
                 padding: 10px 25px; } }
-            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner {
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .total-price .price-inner {
               align-items: center;
               justify-content: space-between; }
-              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner .price-tag h4 {
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .total-price .price-inner .price-tag h4 {
                 margin: 0; }
                 @media (min-width: 576px) {
-                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner .price-tag h4 {
+                  .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .total-price .price-inner .price-tag h4 {
                     font-size: 30px; } }
-              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price .price-inner .price-tag span {
+              .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .total-price .price-inner .price-tag span {
                 font-size: 30px;
                 color: #09757a; }
-            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price p {
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .total-price p {
               margin: 0;
               padding: 15px 0 10px; }
-            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-inner .total-price a {
+            .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .total-price a {
               color: #111;
               font-weight: 600;
               text-decoration: underline; }
@@ -2047,5 +2054,32 @@ body.login-bg {
         text-decoration: underline; }
       .support-area .section-wrapper .text-item .text-column p span {
         padding-bottom: 10px; }
+
+.about-contact {
+  padding: 60px 0;
+  background: #f8f9fa; }
+  @media (min-width: 576px) {
+    .about-contact {
+      padding: 80px 0; } }
+  .about-contact .section-wrapper {
+    position: relative;
+    overflow: visible; }
+    .about-contact .section-wrapper::after {
+      position: absolute;
+      content: "\f291";
+      font-family: "Font Awesome 5 Brands";
+      right: 0;
+      top: 50%;
+      font-size: 45px;
+      opacity: .8;
+      transform: translateY(-50%); }
+    .about-contact .section-wrapper .about-form {
+      padding: 25px;
+      border-radius: 5px;
+      background: #fff; }
+      .about-contact .section-wrapper .about-form form .input-group input.form-control, .about-contact .section-wrapper .about-form form .input-group textarea {
+        background: #f8f9fa; }
+      .about-contact .section-wrapper .about-form form .input-btn button.btn {
+        padding: 8px 25px; }
 
 /*# sourceMappingURL=style.css.map */
