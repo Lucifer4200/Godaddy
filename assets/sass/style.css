@@ -516,11 +516,11 @@ form button.custom-btn {
   border-radius: 5px; }
 
 /*======= all scrollbar css =====*/
-.post-item .post-text.style-one, header .header-bg .header-item, header .header-bg .header-item .header-left, header .header-bg .header-item .header-left .left-menu ul.left-list li .menu-rwo .menu-colum, header .header-bg .header-item .right-menu ul.right-list, .banner-area .content-positon, .navigation-search .search-content, .navigation-search .domain-price ul.price-list, .product-banner .banner-header ul.header-list, .page-header .pagerheader-menu ul.menu-list, .recommended-area .section-wrapper .reccommended-item, .recommended-area .section-wrapper .reccommended-item ul.item-list, .why-godaddy .section-wrapper, .why-godaddy .section-wrapper .godaddy-content .go-search, .why-godaddy .section-wrapper .godaddy-content .art-link ul.link-list, footer .footer-middle .footer-item, footer .footer-bottom .bottom-inner, footer .footer-bottom .bottom-inner .bottom-media ul.media-list, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info ul.info-list li, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .card-status, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .total-price .price-inner, .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social ul.media-list, .empty-busket .section-wrapper .busket-content .inner-search .search-domain, body.login-bg .login-auth .login-card .card-body .form-footer .media-list, .purchase-area .section-wrapper .tab-content .tab-pane .manage-billing .billing-header, .purchase-area .section-wrapper .tab-content .tab-pane .manage-billing .billing-header .header-left ul.left-list, .purchase-area .section-wrapper .tab-content .tab-pane .payment-confirm, .edit-profile .section-wrapper .edit-form form .input-group .input-sellect {
+.post-item .post-text.style-one, header .header-bg .header-item, header .header-bg .header-item .header-left, header .header-bg .header-item .header-left .left-menu ul.left-list li .menu-rwo .menu-colum, header .header-bg .header-item .right-menu ul.right-list, .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content, .navigation-search .search-content, .navigation-search .domain-price ul.price-list, .product-banner .banner-header ul.header-list, .page-header .pagerheader-menu ul.menu-list, .recommended-area .section-wrapper .reccommended-item, .recommended-area .section-wrapper .reccommended-item ul.item-list, .why-godaddy .section-wrapper, .why-godaddy .section-wrapper .godaddy-content .go-search, .why-godaddy .section-wrapper .godaddy-content .art-link ul.link-list, footer .footer-middle .footer-item, footer .footer-bottom .bottom-inner, footer .footer-bottom .bottom-inner .bottom-media ul.media-list, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .domain-info ul.info-list li, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .card-status, .check-out #validation .card .card-content .card-body form fieldset .busket .busket-table .total-price .price-inner, .check-out #validation .card .card-content .card-body form fieldset .create-accout .account-inner .create-social ul.media-list, .empty-busket .section-wrapper .busket-content .inner-search .search-domain, body.login-bg .login-auth .login-card .card-body .form-footer .media-list, .purchase-area .section-wrapper .tab-content .tab-pane .manage-billing .billing-header, .purchase-area .section-wrapper .tab-content .tab-pane .manage-billing .billing-header .header-left ul.left-list, .purchase-area .section-wrapper .tab-content .tab-pane .payment-confirm, .edit-profile .section-wrapper .edit-form form .input-group .input-sellect {
   display: flex;
   flex-wrap: wrap; }
 
-.banner-area::after, .why-godaddy::after, .why-godaddy .section-header span::before {
+.banner-area .banner-slider .swiper-wrapper .swiper-slide::after, .why-godaddy::after, .why-godaddy .section-header span::before {
   position: absolute;
   content: ''; }
 
@@ -860,104 +860,74 @@ header .header-bg {
     background: #e8c011; }
 
 .banner-area {
-  padding: 53px 0;
-  position: relative;
-  background-size: cover;
-  background-position: center; }
-  @media (min-width: 576px) {
-    .banner-area {
-      background-image: url(../../assets/images/banner/01.jpg); } }
-  .banner-area::after {
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60%;
-    width: 100%;
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-image: url(../../assets/images/banner/02.jpg); }
-    @media (min-width: 576px) {
-      .banner-area::after {
-        content: none; } }
-  .banner-area .content-positon {
-    width: 100%;
-    align-items: center;
+  position: relative; }
+  .banner-area .banner-slider .swiper-wrapper .swiper-slide {
+    min-height: 450px;
     position: relative;
-    z-index: 1;
-    justify-content: space-between; }
-    @media (max-width: 575px) {
-      .banner-area .content-positon {
-        display: block; } }
-    .banner-area .content-positon .content-left {
-      text-align: center;
-      width: 100%; }
-      @media (min-width: 576px) {
-        .banner-area .content-positon .content-left {
-          width: 40%; } }
-      .banner-area .content-positon .content-left span {
-        font-weight: 600;
-        color: #111;
-        padding-bottom: 15px;
-        display: inline-block; }
-      .banner-area .content-positon .content-left h3 {
-        line-height: 1.2;
-        font-weight: 700;
-        text-transform: none; }
-        @media (min-width: 576px) {
-          .banner-area .content-positon .content-left h3 {
-            font-size: 32px; } }
-        @media (min-width: 992px) {
-          .banner-area .content-positon .content-left h3 {
-            font-size: 45px; } }
-      .banner-area .content-positon .content-left p {
-        margin: 0;
-        padding: 20px 0; }
-      .banner-area .content-positon .content-left button.btn {
-        padding: 15px 55px;
-        border-radius: 0; }
-        @media (max-width: 575px) {
-          .banner-area .content-positon .content-left button.btn {
-            margin-top: 250px; } }
-        .banner-area .content-positon .content-left button.btn span {
-          padding-bottom: 0;
-          color: #fff; }
-    .banner-area .content-positon .content-right {
-      text-align: center;
+    background-size: cover;
+    background-position: center; }
+    .banner-area .banner-slider .swiper-wrapper .swiper-slide::after {
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
       width: 100%;
-      margin-top: 70px;
-      padding: 15px 0;
-      background: #f5f5f5; }
-      @media (min-width: 576px) {
-        .banner-area .content-positon .content-right {
-          width: 45%;
-          margin-top: 0;
-          padding: 0;
-          background: transparent; } }
-      .banner-area .content-positon .content-right span {
-        font-weight: 600;
-        color: #111;
-        padding-bottom: 15px;
-        display: inline-block; }
-      .banner-area .content-positon .content-right h3 {
-        line-height: 1.2;
-        font-weight: 700;
-        text-transform: none; }
-        @media (min-width: 576px) {
-          .banner-area .content-positon .content-right h3 {
-            font-size: 32px; } }
-        @media (min-width: 992px) {
-          .banner-area .content-positon .content-right h3 {
-            font-size: 45px; } }
-      .banner-area .content-positon .content-right p {
-        margin: 0;
-        padding: 20px 0; }
-      .banner-area .content-positon .content-right button.btn {
-        padding: 15px 55px;
-        border-radius: 0; }
-        .banner-area .content-positon .content-right button.btn span {
-          padding-bottom: 0;
-          color: #fff; }
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); }
+    .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content {
+      align-items: center;
+      min-height: 450px;
+      text-align: center;
+      justify-content: center; }
+      @media (min-width: 768px) {
+        .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content {
+          text-align: left;
+          justify-content: flex-start; } }
+      .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content .content-position {
+        position: relative;
+        z-index: 999;
+        width: 100%; }
+        @media (min-width: 768px) {
+          .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content .content-position {
+            width: 50%; } }
+        .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content .content-position span {
+          font-weight: 600;
+          color: #fff;
+          padding-bottom: 15px;
+          display: inline-block; }
+        .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content .content-position h3 {
+          line-height: 1.2;
+          font-weight: 700;
+          color: #fff;
+          text-transform: none; }
+          @media (min-width: 576px) {
+            .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content .content-position h3 {
+              font-size: 32px; } }
+          @media (min-width: 992px) {
+            .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content .content-position h3 {
+              font-size: 45px; } }
+        .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content .content-position p {
+          margin: 0;
+          color: #fff;
+          padding: 20px 0; }
+        .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content .content-position button.btn {
+          padding: 15px 55px;
+          border-radius: 0;
+          background: #00838C; }
+          .banner-area .banner-slider .swiper-wrapper .swiper-slide .banner-content .content-position button.btn span {
+            padding-bottom: 0;
+            color: #fff; }
+  .banner-area .banner-slider .swiper-button-prev, .banner-area .banner-slider .swiper-button-next {
+    background: #635757; }
+    @media (max-width: 575px) {
+      .banner-area .banner-slider .swiper-button-prev, .banner-area .banner-slider .swiper-button-next {
+        display: none; } }
+    .banner-area .banner-slider .swiper-button-prev::after, .banner-area .banner-slider .swiper-button-next::after {
+      font-size: 20px; }
+  .banner-area .banner-slider .swiper-button-prev {
+    left: 0; }
+  .banner-area .banner-slider .swiper-button-next {
+    right: 0; }
 
 .navigation-search {
   padding: 20px 0; }

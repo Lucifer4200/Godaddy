@@ -140,5 +140,19 @@
     //     $(".wow").removeClass("wow");
     // }
 
+    // banner slider activation
+    var swiper = new Swiper('.banner-slider', {
+        spaceBetween: 30,
+        effect: 'fade',
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+    });
+
 
 })(jQuery);
