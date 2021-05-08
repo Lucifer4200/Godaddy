@@ -860,7 +860,8 @@ header .header-bg {
     background: #e8c011; }
 
 .banner-area {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .banner-area .banner-slider .swiper-wrapper .swiper-slide {
     min-height: 450px;
     position: relative;
