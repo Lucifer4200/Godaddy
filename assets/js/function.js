@@ -140,20 +140,11 @@
     //     $(".wow").removeClass("wow");
     // }
 
-    // banner slider activation
-    var swiper = new Swiper('.banner-slider', {
-        spaceBetween: 30,
-        effect: 'fade',
-        autoplay: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-    });
+    // banner slider setTime
+    var carouselExampleCaptions = document.querySelector('#carouselExampleCaptions')
+    var carousel = new bootstrap.Carousel(carouselExampleCaptions, {
+        interval: 3000,
+    })
 
 
 })(jQuery);

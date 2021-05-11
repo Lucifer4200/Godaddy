@@ -3,91 +3,132 @@
     position: relative;
     overflow: hidden;
     .banner-slider {
-        .swiper-wrapper {
-            .swiper-slide {
-                min-height: 450px;
-                position: relative;
-                background-size: cover;
-                background-position: center;
-                &::after {
-                    @extend %absolute;
-                    top: 0;
-                    right: 0;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: $overlay;
-                }
-                .banner-content {
-                    @extend %flex;
-                    align-items: center;
-                    min-height: 450px;
-                    text-align: center;
-                    justify-content: center;
-                    @include breakpoint (md) {
-                        text-align: left;
-                        justify-content: flex-start;
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                        max-height: 450px;
                     }
-                    .content-position {
-                        position: relative;
-                        z-index: 999;
-                        width: 100%;
-                        @include breakpoint (md) {
-                            width: 50%;
-                        }
-                        span {
-                            font-weight: 600;
-                            color: $white-color;
-                            padding-bottom: 15px;
-                            display: inline-block;
-                        }
-                        h3 {
+                    .carousel-caption {
+                        left: 5%;
+                        top: 50%;
+                        right: auto;
+                        bottom: auto;
+                        text-align: left;
+                        transform: translateY(-50%);
+                        h2 {
+                            margin-left: 0;
+                            max-width: 600px;
                             line-height: 1.2;
-                            font-weight: 700;
                             color: $white-color;
-                            text-transform: none;
-                            @include breakpoint (sm) {
-                                font-size: 32px;
-                            }
-                            @include breakpoint (lg) {
-                                font-size: 45px;
-                            }
-                            
                         }
                         p {
-                            margin: 0;
                             color: $white-color;
-                            padding: 20px 0;
+                            max-width: 550px;
+                            margin-left: 0;
                         }
-                        button.btn {
-                            padding: 15px 55px;
-                            border-radius: 0;
-                            background: #00838C;
-                            span {
-                                padding-bottom: 0;
-                                color: $white-color;
-                            }
+                        span {
+                            color: $white-color;
+                            font-weight: 500;
+                            font-size: 18px;
                         }
                     }
                 }
             }
-        }
-        .swiper-button-prev, .swiper-button-next {
-            background: #635757;
-            @include breakpoint (max-sm) {
-                display: none;
+            .carousel-control-prev, .carousel-control-next {
+                width: 5%;
+                top: 50%;
+                height: 70px;
+                width: 40px;
+                transform: translateY(-50%);
+                background: #000;
             }
-            &::after {
-                font-size: 20px;
-            }
         }
-        .swiper-button-prev {
-            left: 0;
-        }
-        .swiper-button-next {
-            right: 0;
-        }
+        // .swiper-wrapper {
+        //     .swiper-slide {
+        //         min-height: 450px;
+        //         position: relative;
+        //         background-size: cover;
+        //         background-position: center;
+        //         &::after {
+        //             @extend %absolute;
+        //             top: 0;
+        //             right: 0;
+        //             left: 0;
+        //             bottom: 0;
+        //             width: 100%;
+        //             height: 100%;
+        //             background: $overlay;
+        //         }
+        //         .banner-content {
+        //             @extend %flex;
+        //             align-items: center;
+        //             min-height: 450px;
+        //             text-align: center;
+        //             justify-content: center;
+        //             @include breakpoint (md) {
+        //                 text-align: left;
+        //                 justify-content: flex-start;
+        //             }
+        //             .content-position {
+        //                 position: relative;
+        //                 z-index: 999;
+        //                 width: 100%;
+        //                 @include breakpoint (md) {
+        //                     width: 50%;
+        //                 }
+        //                 span {
+        //                     font-weight: 600;
+        //                     color: $white-color;
+        //                     padding-bottom: 15px;
+        //                     display: inline-block;
+        //                 }
+        //                 h3 {
+        //                     line-height: 1.2;
+        //                     font-weight: 700;
+        //                     color: $white-color;
+        //                     text-transform: none;
+        //                     @include breakpoint (sm) {
+        //                         font-size: 32px;
+        //                     }
+        //                     @include breakpoint (lg) {
+        //                         font-size: 45px;
+        //                     }
+                            
+        //                 }
+        //                 p {
+        //                     margin: 0;
+        //                     color: $white-color;
+        //                     padding: 20px 0;
+        //                 }
+        //                 button.btn {
+        //                     padding: 15px 55px;
+        //                     border-radius: 0;
+        //                     background: #00838C;
+        //                     span {
+        //                         padding-bottom: 0;
+        //                         color: $white-color;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        // .swiper-button-prev, .swiper-button-next {
+        //     background: #635757;
+        //     @include breakpoint (max-sm) {
+        //         display: none;
+        //     }
+        //     &::after {
+        //         font-size: 20px;
+        //     }
+        // }
+        // .swiper-button-prev {
+        //     left: 0;
+        // }
+        // .swiper-button-next {
+        //     right: 0;
+        // }
     }
 }
 //*===== banner-area css ends  =====*//

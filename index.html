@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- lightcase css -->
     <link rel="stylesheet" href="assets/css/lightcase.css">
-    <!-- swiper css -->
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
     <!-- style css -->
     <link rel="stylesheet" href="assets/sass/style.css">
 
@@ -248,47 +246,40 @@
     <section class="banner-area">
         <div class="container-fluid p-0">
             <div class="banner-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image: url(assets/images/banner/slider/01.jpg);">
-                        <div class="banner-content">
-                            <div class="container">
-                                    <div class="content-position">
-                                    <span class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".1s">Domain Names</span>
-                                    <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".1s">Get a .com for <strong>₹ 199.00*</strong> /1st yr.</h3>
-                                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">Grab the world's most popular domain. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores hic sequi provident!</p>
-                                    <button type="button" class="btn"><span>Get It Now <i class="fa fa-arrow-right"></i></span></button>
-                                </div>
-                            </div>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/images/banner/slider/01.jpg" class="d-block w-100" alt="assets/images/banner/01.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <span class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s">Domain Names</span>
+                            <h2 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">Get a .com for <strong>₹ 199.00*</strong> /1st yr.</h2>
+                            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni inventore cumque sint illum sed quis.<p>
                         </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image: url(assets/images/banner/slider/02.jpg);">
-                        <div class="banner-content">
-                            <div class="container">
-                                    <div class="content-position">
-                                    <span class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">Domain Names</span>
-                                    <h3>Get a .com for <strong>₹ 199.00*</strong> /1st yr.</h3>
-                                    <p>Grab the world's most popular domain. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores hic sequi provident!</p>
-                                    <button type="button" class="btn"><span>Get It Now <i class="fa fa-arrow-right"></i></span></button>
-                                </div>
-                            </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/banner/slider/02.jpg" class="d-block w-100" alt="assets/images/banner/02.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <span class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">Domain Names</span>
+                            <h2 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".1s">Get a .com for <strong>₹ 199.00*</strong> /1st yr.</h2>
+                            <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni inventore cumque sint illum sed quis.<p>
                         </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image: url(assets/images/banner/slider/03.jpg);">
-                        <div class="banner-content">
-                            <div class="container">
-                                    <div class="content-position">
-                                    <span class="wow fadeIn">Domain Names</span>
-                                    <h3>Get a .com for <strong>₹ 199.00*</strong> /1st yr.</h3>
-                                    <p>Grab the world's most popular domain. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores hic sequi provident!</p>
-                                    <button type="button" class="btn"><span>Get It Now <i class="fa fa-arrow-right"></i></span></button>
-                                </div>
-                            </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/banner/slider/03.jpg" class="d-block w-100" alt="assets/images/banner/03.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <span class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s">Domain Names</span>
+                            <h2 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">Get a .com for <strong>₹ 199.00*</strong> /1st yr.</h2>
+                            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni inventore cumque sint illum sed quis.<p>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <!-- Add Navigation -->
-                <div class="swiper-button-prev swiper-button-white"></div>
-                <div class="swiper-button-next swiper-button-white"></div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                  </div>
             </div>
         </div>
     </section>
@@ -667,7 +658,6 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/lightcase.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/function.js"></script>
 </body>
 </html>

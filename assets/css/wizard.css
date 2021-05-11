@@ -37,9 +37,14 @@
   vertical-align : top;
   text-align : left;
   position : relative;
-  padding-right: 50px;
+  padding-right: 25px;
 }
 
+@media (min-width: 992px) {
+  .check-out .wizard > .steps > ul > li {
+    padding-right: 35px;
+  }
+}
 
 .check-out .wizard > .steps > ul > li a {
   position : relative;
